@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Cryotherapy Device" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Cryotherapy Device</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Optional: Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+  />
+</head>
+<body>
+  <!-- Header / Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <a href="#">CryoTech</a>
+      </div>
+      <div class="nav-toggle" id="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Revolutionary Cryotherapy Device</h1>
+      <p>
+        Experience faster recovery, enhanced performance, and improved wellness 
+        with our cutting-edge cryotherapy solution.
+      </p>
+      <a href="#about" class="btn-primary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="section-title">
+      <h2>Key Features</h2>
+      <p>Discover what makes our cryotherapy device stand out.</p>
+    </div>
+    <div class="features-container">
+      <article class="feature-item">
+        <img src="images/feature1.jpg" alt="Feature 1" />
+        <h3>Portable & Lightweight</h3>
+        <p>Our device is designed for easy transportation and storage.</p>
+      </article>
+      <article class="feature-item">
+        <img src="images/feature2.jpg" alt="Feature 2" />
+        <h3>Rapid Cooling</h3>
+        <p>Achieve optimal temperatures faster and more consistently.</p>
+      </article>
+      <article class="feature-item">
+        <img src="images/feature3.jpg" alt="Feature 3" />
+        <h3>Safety Controls</h3>
+        <p>Built-in sensors and fail-safes ensure a safe and reliable session.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="section-title">
+      <h2>How It Works</h2>
+    </div>
+    <div class="how-container">
+      <p>
+        Our device uses ultra-cold temperatures to trigger a range of health 
+        benefits, including reducing inflammation, speeding up muscle recovery, 
+        and improving overall well-being. Simply apply the device to the targeted 
+        area or use our recommended protocols to experience the full benefits.
+      </p>
+      <ul>
+        <li>Step 1: Prep the target area</li>
+        <li>Step 2: Apply cold therapy using our device</li>
+        <li>Step 3: Monitor progress with built-in sensors</li>
+        <li>Step 4: Follow up with recommended post-treatment care</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="section-title">
+      <h2>About CryoTech</h2>
+    </div>
+    <div class="about-content">
+      <p>
+        CryoTech was founded by a team of sports medicine professionals and 
+        engineers dedicated to improving recovery through advanced technology. 
+        Our cryotherapy device is the culmination of years of research and 
+        development, delivering the benefits of cold therapy in a compact, 
+        user-friendly design.
+      </p>
+      <div class="about-image">
+        <img src="images/device.jpg" alt="Cryotherapy Device" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="section-title">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to place an order? We'd love to hear from you!</p>
+    </div>
+    <div class="contact-container">
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name <span>*</span></label>
+          <input type="text" id="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email <span>*</span></label>
+          <input type="email" id="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message <span>*</span></label>
+          <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CryoTech. All Rights Reserved.</p>
+    <small>
+      Disclaimer: This website is for informational purposes only. Consult a 
+      healthcare professional before using cryotherapy.
+    </small>
+  </footer>
+
+  <!-- JavaScript (Optional for Mobile Menu) -->
+  <script>
+    const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+    const navMenu = document.getElementById("nav-menu");
+
+    mobileMenuToggle.addEventListener("click", () => {
+      navMenu.classList.toggle("nav-menu--open");
+      mobileMenuToggle.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>
